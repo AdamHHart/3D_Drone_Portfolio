@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Major+Mono+Display&family=Roboto+Condensed&display=swap&family=Philosopher&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+
+    /* FONTS
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+    */
+    body{overflow: hidden;}
+
+    
+    .n{padding-top: 15vh; padding-left: 1vw; position: absolute;top: 100px;width: 500px;height: 10px; background: none; transform-origin: left;  }
+    .n1{
+      top: 200px;
+      
+    }
+    .n2{
+      top: 300px;
+    }
+    .n3{
+      top: 400px;
+    }
+    .n4{
+      top: 500px;
+    }
+    .headlines{
+      opacity: 0;
+    }
+    h1{
+      font-family: 'Philosopher', sans-serif;
+      /* font-family: 'IBM Plex Mono', monospace; */
+      font-size: 3vw;
+      color:black;
+    }
+    h2{
+
+      font-family: 'Major Mono Display', monospace;
+      font-size: 5vw;
+      color:black;
+    }
+    h3{
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 2vw;
+      color:black;
+    }
+
+    .header{
+      padding-left: 1vw;
+      width: 15vw;
+      position: fixed;
+      top: 0;
+      /* background: red; */
+      z-index: 100;
+    }
+    .header2{
+      padding-left: 18vw;
+      padding-top: 20px;
+      width: 15vw;
+      position: fixed;
+      top: 0;
+      z-index: 101;
+    }
+    #container{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      pointer-events: none;
+    }
+    ul{
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      border:  1px solid black;
+      width: 200px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="nav">
+    <li data-nav="0">000</li>
+    <!-- <li data-nav="1">111</li>
+    <li data-nav="2">222</li>
+    <li data-nav="3">333</li>
+    <li data-nav="4">444</li>
+    <li data-nav="5">555</li>
+    <li data-nav="6">666</li>
+    <li data-nav="7">777</li>
+    <li data-nav="8">888</li>
+    <li data-nav="9">999</li> -->
+  </ul>
+  <div class="header">
+    <h2>Adam Hart</h2>
+  </div>
+  <!-- <div class="header2">
+    <h3>Design. <br>Build. <br>Launch!</h3>
+  </div> -->
+
+  <div id="wrap">
+
+    <div class="n" >
+      <div id="headlines">
+        <img src="img/widg.jpg" width="1" alt="">
+        <h1>Widgeon Creek</h1>
+        <h3>May 2023</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="block"></div>
+  <div id="container"></div>
+  <script type="module" src="app.js"></script>
+  
+</body>
+</html>

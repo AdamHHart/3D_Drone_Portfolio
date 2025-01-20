@@ -1,0 +1,19 @@
+{
+  "name": "3D_scroll_images_gallery",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf dist .parcel-cache",
+    "build": "rm -rf .parcel-cache dist && parcel build index.html --no-cache",
+    "start": "parcel index.html --open"
+  },
+  "dependencies": {
+    "three": "^0.133.1",
+    "gsap": "^3.8.0",
+    "dat.gui": "^0.7.7"
+  },
+  "devDependencies": {
+    "@parcel/transformer-glsl": "2.13.3",
+    "@parcel/transformer-image": "2.13.3",
+    "parcel": "^2.13.3"
+  }
+}
